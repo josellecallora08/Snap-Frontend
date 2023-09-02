@@ -33,8 +33,8 @@ Users should be able to:
 ![Snap Website](./images/screenshot.PNG)
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/josellecallora08/Snap-Frontend)
-- Live Site URL: [Add live site URL here](https://josellecallora08.github.io/Snap-Frontend/)
+- Solution URL: [https://github.com/josellecallora08/Snap-Frontend](https://your-solution-url.com)
+- Live Site URL: [https://josellecallora08.github.io/Snap-Frontend/](https://your-live-site-url.com)
 
 ## My process
 Since I have been practicing Frontend Development, I started Mobile Design first then proceeding to Desktop Design.
@@ -46,14 +46,14 @@ Since I have been practicing Frontend Development, I started Mobile Design first
 - CSS Grid
 - Mobile-first workflow
 
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
-
 ### What I learned
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
 
+```html
+<h1>Some HTML code I'm proud of</h1>
   <li>
           <button class="features" onclick="showFeatures()">
             <span>Features</span>
@@ -88,26 +88,57 @@ To see how you can add code snippets, see below:
             </ul>
           </div>
         </li>
-<h1>Some HTML code I'm proud of</h1>
+```css
+.features-nav, .company-nav{
+    width: 90%;
+    height: 0;
+    transform: translateY(-100%);
+    transition: 300ms ease-in-out;
+    z-index: -1;
+    & ul{
+        width: 100%;
+        margin: 0;
+        margin-left: 10px;
+        padding: 0;
+        z-index: -1;
+    }
 
+    & li a{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
 
-### Continued development
+    & li a img{
+        width: 15px;
+    }
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+    &.active{
+        height: 100%;
+        transform: translateY(0);
+        transition: 300ms ease-in-out;
+    }
+}
+```
+```js
+function showFeatures(){
+    features_innernav.classList.toggle('active')
+    features_span.classList.toggle('active')
+    features_icon.classList.toggle('active')
+    if(features_icon.classList.contains('active')){
+        features_icon.src = `./images/icon-arrow-up.svg`
+    } else{
+        features_icon.src = `./images/icon-arrow-down.svg`
+    }
+}
+```
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
-
-### Useful resources
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
 
 ## Author
 
-- Website - [Joselle Callora](https://www.your-site.com)
 - Frontend Mentor - [@josellecallora08](https://www.frontendmentor.io/profile/yourusername)
 - Twitter - [@josellecallora08](https://www.twitter.com/yourusername)
-
-
-
-## Acknowledgments
-
+- Facebook - [@josellecallora08](https://www.facebook.com/yourusername)
 
