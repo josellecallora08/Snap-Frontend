@@ -33,8 +33,8 @@ Users should be able to:
 ![Snap Website](./images/screenshot.PNG)
 ### Links
 
-- Solution URL: [https://github.com/josellecallora08/Snap-Frontend](https://your-solution-url.com)
-- Live Site URL: [https://josellecallora08.github.io/Snap-Frontend/](https://your-live-site-url.com)
+- Solution URL: [https://github.com/josellecallora08/Snap-Frontend](https://github.com/josellecallora08/Snap-Frontend)
+- Live Site URL: [https://josellecallora08.github.io/Snap-Frontend/](https://josellecallora08.github.io/Snap-Frontend/)
 
 ## My process
 Since I have been practicing Frontend Development, I started Mobile Design first then proceeding to Desktop Design.
@@ -88,6 +88,7 @@ To see how you can add code snippets, see below:
             </ul>
           </div>
         </li>
+```
 ```css
 .features-nav, .company-nav{
     width: 90%;
@@ -138,7 +139,7 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ## Author
 
-- Frontend Mentor - [@josellecallora08](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@josellecallora08](https://www.twitter.com/yourusername)
-- Facebook - [@josellecallora08](https://www.facebook.com/yourusername)
+- Frontend Mentor - [@josellecallora08](https://www.frontendmentor.io/profile/josellecallora08)
+- Twitter - [@josellecallora08](https://www.twitter.com/josellecallora08)
+- Facebook - [@josellecallora08](https://www.facebook.com/josellecallora08)
 
