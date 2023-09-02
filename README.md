@@ -139,6 +139,6 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ## Author
 
-- Frontend Mentor - [@josellecallora08](https://www.frontendmentor.io/profile/Jsllcllr8)
+- Frontend Mentor - [@jsllcllr8](https://www.frontendmentor.io/profile/Jsllcllr8)
 - Facebook - [@josellecallora08](https://www.facebook.com/josellecallora08)
 
