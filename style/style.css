@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&family=Poppins:wght@500&display=swap');
+*{
+    font-family: 'Epilogue', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+.nav-bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+
+    &.active{
+        background-color: rgba(58, 56, 56, 0.679);
+    }
+}
+.attribution { 
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    margin: 0 auto;
+    font-size: 11px; 
+    text-align: center; 
+    letter-spacing: .2em;
+}
+.attribution a { color: hsl(228, 45%, 44%); }
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;    
+    height: 80px;
+}
+nav{
+    position: relative;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    transform: translateX(100%);
+    transition: 300ms ease-in-out;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 60%;
+    height: 100%;
+    z-index: 1;
+    &.active{
+        transform: translateX(0);
+    }
+    & .menu-close-btn{
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}
+nav ul{
+    overflow: hidden;
+    margin-top: 80px;
+    list-style-type: none;
+    font-size: 15px;
+    margin-left: -20px;
+}
+ nav ul li{
+    overflow: hidden;
+    color: gray;
+    margin: 20px 0;
+    & button{
+        all: unset;
+        background-color: white;
+        width: 100%;
+        cursor: pointer;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+    }
+    & button span.active{
+        color: black;
+        font-weight: 600;
+    }
+
+    & a{
+        color: gray;
+        text-decoration: none;
+    }
+ }
+.features-nav, .company-nav{
+    width: 90%;
+    height: 0;
+    transform: translateY(-100%);
+    transition: 300ms ease-in-out;
+    z-index: -1;
+    & ul{
+        width: 100%;
+        margin: 0;
+        margin-left: 10px;
+        padding: 0;
+        z-index: -1;
+    }
+
+    & li a{
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    & li a img{
+        width: 15px;
+    }
+
+    &.active{
+        height: 100%;
+        transform: translateY(0);
+        transition: 300ms ease-in-out;
+    }
+}
+ .login-signup{
+    display: flex;
+    flex: 1;
+    flex-wrap: wrap;
+    gap: 20px;
+    & .login{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        padding: 10px;
+    }
+    & .signup{
+        width: 80%;
+        margin: 0 auto;
+        text-align: center;
+        border: 1px solid black;
+        border-radius: 15px;
+        padding: 10px;
+    }
+    & a{
+        text-decoration: none;
+        color: gray;
+    }
+ }
+ 
+.menu-btn, .menu-close-btn{
+    all: unset;
+    cursor: pointer;
+}
+
+.wallpaper{
+
+    & .wallpaper-mobile{
+        object-fit: cover;
+        width: 100%;
+    }
+}
+
+.content{
+    margin-top: 50px;
+
+    & h1{
+        text-align: center;
+    }
+    & p{
+        text-align: center;
+        line-height: 1.5em;
+        color: hsl(0, 0%, 41%);
+    }
+    & .learnmore-btn{
+        display: flex;
+        justify-content: center;
+        margin: 20px 10px 50px 10px;
+    }
+    & button{
+        all: unset;
+        cursor: pointer;
+        padding: 15px;
+        border: 1px solid;
+        border-radius: 15px;
+        background-color: black;
+        color: hsl(0, 0%, 98%);
+    }
+}
+
+.list-logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    margin-top: 50px;
+    width: 90%;
+    margin: 0 auto;
+
+    & .logo-image{
+        width: 100%;
+    }
+    & .logo-image img{
+        object-fit: cover;
+        width: 100%;
+    }
+
+}
+.wallpaper-desktop{
+    display: none;
+}
+
+@media screen and (min-width: 768px) {
+    *{
+        padding: 0;
+        margin: 0;
+    }
+    .menu-btn, .menu-close-btn,.wallpaper-mobile, .nav-bg{
+        display: none;
+    }
+
+    .body{
+        all: unset;
+        background-color: hsl(0, 0%, 98%);
+        height: 100%;
+    }
+ 
+    header{
+        all: unset;
+        position: relative;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        width: 90%;
+        margin: 0 auto;
+        height: 80px;
+        background-color: white;
+    }
+    nav{
+        all: unset;
+        display: flex;
+        align-items: center;
+        background-color: white;
+        z-index: 1;
+
+        & .login-signup{
+            all: unset;
+            position: absolute;
+            right:0;
+            display: inline-flex;
+            gap: 20px;
+        }
+        & .login-signup .signup{
+            padding: 10px 15px;
+        }
+    }
+  
+    nav ul{
+        all: unset;
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        z-index: 1;
+    }
+    nav ul li{
+        all: unset;
+        position: relative;
+    }
+    .features-nav, .company-nav{
+        position: absolute;
+        top: 40px;
+        left: -50px;
+        height: 0;
+        width: fit-content;
+        overflow: hidden;
+        transform: translateY(-100%);
+        transition: 300ms ease-in-out;
+        background-color: white;
+        border-radius: 20px;
+        box-shadow: 4px 4px 4px rgba(0,0,0,0.1);
+        z-index: 0;
+        
+        & ul{
+            all: unset;
+            display: flex;  
+            flex-direction: column;
+            gap: 0;
+            padding: 0;
+            width: 125px;
+            padding: 10px;
+        }        
+        & li{
+            margin: 10px 0;
+        }
+
+        &.active{
+            height: fit-content;
+            overflow: visible;
+        }
+    }
+    .company-nav{
+            left: 0px;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+        margin: 0 auto;
+        grid-auto-flow: dense;
+        justify-items: flex-end;
+    }
+    .wallpaper{
+        grid-column: 2;
+        width: 80%;
+        & .wallpaper-desktop{
+            display: block;
+            object-fit: contain;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .content{
+        display: grid;
+        grid-template-rows: 300px 150px 100px 1fr;
+        width: 100%;
+        
+        & h1{
+            grid-row: 1;
+            font-size: 5em;
+            text-align: start;
+            align-self: flex-end;
+        }
+        & h1 span{
+            display: block
+        }
+        & p{
+            grid-row: 2;
+            align-self: flex-start;
+            max-width: 400px;
+            margin: 30px 0;
+            text-align: start;
+        }
+        & .learnmore-btn{
+            align-items: flex-start;
+            grid-row: 3;
+            margin: 0;
+            justify-content: flex-start;
+            margin-bottom: 30px;
+        }
+        & .learnmore-btn button:active{
+           background-color: white;
+           color: black;
+           border-color: black;
+        }
+        & .list-logo{
+            align-self: flex-end;
+            grid-row: 4;
+            width: 100%;
+            justify-content: space-between;
+        }
+        & .list-logo .logo-image{
+            max-width: 100px;
+            width: 100%;
+        }
+        & .list-logo .logo-image img{
+            width: 100%;
+        }
+    }
+    
+}
